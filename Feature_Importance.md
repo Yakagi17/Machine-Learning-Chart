@@ -1,3 +1,11 @@
+Feature Importance Plot Format
+===============
+
+JSON
+----
+
+```json
+
 option = {
     title: {
         text: 'Feature Importance',
@@ -34,3 +42,7 @@ option = {
         }
     ]
 };
+
+```
+
+That was my JSON code block.
