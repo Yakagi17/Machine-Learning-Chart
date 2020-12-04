@@ -3,46 +3,63 @@ Feature Importance Plot Format
 
 JSON
 ----
-
-```json
-
 option = {
     title: {
-        text: 'Feature Importance',
-        subtext: 'feature importance of ... dataset using permuation importance'
-    },
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'shadow'
-        }
+        text: 'Area Under ROC Curve',
+        subtext: ''
     },
     legend: {
-        data: ['Permutaion Importance Score']
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
+        top: 'top',
+        data: ['class-iris Setosa','class-iris Versicolor', 'class-iris Virginica']
     },
     xAxis: {
-        type: 'value',
-        boundaryGap: [0, 0.01]
+        name: 'False Positive Rate',
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: "bold",
+            verticalAlign: "top",
+            lineHeight: 50
+        }
     },
     yAxis: {
-        type: 'category',
-        data: ['longitude','latitude','housing_median_age','total_rooms','total_bedrooms','population']
-    },
-    series: [
-        {
-            name: 'Permutaion Importance Score',
-            type: 'bar',
-            data: [18203, 23489, 29034, 104970, 131744, 630230]
+        name: 'True Positive Rate',
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: "bold",
+            verticalAlign: "bottom",
+            lineHeight: 50
         }
-    ]
+    },
+    series: [{
+        data: [0,1],
+        type: 'line',
+        lineStyle: {
+            color: '#5470C6',
+            width: 4,
+            type: 'dashed'
+        }
+    },
+    {   
+        name: 'class-iris Setosa',
+        data: [[0, 0],[0, 1],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    },
+    {   
+        name:'class-iris Versicolor',
+        data: [[0, 0],[0.05882353, 1],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    },
+    {
+        name: 'class-iris Virginica',
+        data: [[0, 0],[0, 0.8],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    }]
 };
+```json
 
 ```
 
-That was my JSON code block.
+Description
