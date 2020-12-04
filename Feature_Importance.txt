@@ -6,8 +6,6 @@ Feature Importance Plot : Format
 
 example.
 
-Case : 
-a. Multiclass Classification
 ----------------------------
 option = {
     title: {
