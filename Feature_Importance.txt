@@ -1,9 +1,12 @@
-Feature Importance Plot Format
+Code Block Test
 ===============
 
 JSON
 ----
-option = {
+
+option = 
+```json
+{
     title: {
         text: 'Area Under ROC Curve',
         subtext: ''
@@ -58,8 +61,6 @@ option = {
         areaStyle: {}
     }]
 };
-```json
-
 ```
 
-Description
+That was my JSON code block.
