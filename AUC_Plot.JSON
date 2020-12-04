@@ -1,0 +1,55 @@
+option = {
+    title: {
+        text: 'Area Under ROC Curve',
+        subtext: ''
+    },
+    legend: {
+        top: 'top',
+        data: ['class-iris Setosa','class-iris Versicolor', 'class-iris Virginica']
+    },
+    xAxis: {
+        name: 'False Positive Rate',
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: "bold",
+            verticalAlign: "top",
+            lineHeight: 50
+        }
+    },
+    yAxis: {
+        name: 'True Positive Rate',
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: "bold",
+            verticalAlign: "bottom",
+            lineHeight: 50
+        }
+    },
+    series: [{
+        data: [0,1],
+        type: 'line',
+        lineStyle: {
+            color: '#5470C6',
+            width: 4,
+            type: 'dashed'
+        }
+    },
+    {   
+        name: 'class-iris Setosa',
+        data: [[0, 0],[0, 1],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    },
+    {   
+        name:'class-iris Versicolor',
+        data: [[0, 0],[0.05882353, 1],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    },
+    {
+        name: 'class-iris Virginica',
+        data: [[0, 0],[0, 0.8],[1, 1]],
+        type: 'line',
+        areaStyle: {}
+    }]
+};
