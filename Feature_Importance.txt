@@ -1,12 +1,15 @@
-Code Block Test
+Feature Importance Plot : Format
 ===============
+- Machine Learning (Modeling)
+- Classification
 
-JSON
-----
 
-option = 
-```json
-{
+example.
+
+Case : 
+a. Multiclass Classification
+----------------------------
+option = {
     title: {
         text: 'Area Under ROC Curve',
         subtext: ''
@@ -61,6 +64,5 @@ option =
         areaStyle: {}
     }]
 };
-```
-
-That was my JSON code block.
+----------------------------
+Description
