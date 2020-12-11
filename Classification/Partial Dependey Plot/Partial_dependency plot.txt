@@ -1,9 +1,11 @@
 option = {
     xAxis: {
+        // how to make this range x-axis adjust with pdp data range
         min: -125,
         max: -115
     },
     yAxis: {
+        // how to make this range y-axis adjust with axes data range
         min: 220000,
         max: 210000,
         type: 'value'
